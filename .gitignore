@@ -1,0 +1,20 @@
+# Build output
+bin/
+obj/
+publish/
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test / coverage
+TestResults/
+coverage*.xml
+
+# OS noise
+Thumbs.db
+desktop.ini

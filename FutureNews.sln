@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{351254E5-7FCD-45C7-9862-472ABBF2E0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureNews.Core", "src\FutureNews.Core\FutureNews.Core.csproj", "{75E7604B-3EE5-4153-AC55-84F714E9158E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FutureNews.App", "src\FutureNews.App\FutureNews.App.csproj", "{0AE6AB05-51C9-4116-94E6-F570B39FC2DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E7604B-3EE5-4153-AC55-84F714E9158E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E7604B-3EE5-4153-AC55-84F714E9158E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E7604B-3EE5-4153-AC55-84F714E9158E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E7604B-3EE5-4153-AC55-84F714E9158E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE6AB05-51C9-4116-94E6-F570B39FC2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE6AB05-51C9-4116-94E6-F570B39FC2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE6AB05-51C9-4116-94E6-F570B39FC2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE6AB05-51C9-4116-94E6-F570B39FC2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75E7604B-3EE5-4153-AC55-84F714E9158E} = {351254E5-7FCD-45C7-9862-472ABBF2E0FF}
+		{0AE6AB05-51C9-4116-94E6-F570B39FC2DD} = {351254E5-7FCD-45C7-9862-472ABBF2E0FF}
+	EndGlobalSection
+EndGlobal

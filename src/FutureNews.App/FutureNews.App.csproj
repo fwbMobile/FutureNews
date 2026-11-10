@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>FutureNews.App</RootNamespace>
+    <AssemblyName>FutureNews</AssemblyName>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <!-- WFAC010: the WinForms analyzer wants DPI handled by Application.SetHighDpiMode,
+         but this is a WPF app; PerMonitorV2 stays in the manifest where WPF reads it. -->
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FutureNews.Core\FutureNews.Core.csproj" />
+  </ItemGroup>
+
+  <!-- WinForms is only used for the tray icon; keep it out of the implicit usings so it
+       does not collide with the WPF types (Brush, Color, MessageBox, ...). -->
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+  </ItemGroup>
+
+</Project>
